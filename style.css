@@ -1,0 +1,35 @@
+body {
+    background: #451952;
+    font-family: Rubik Mono One;
+}
+.title_box{
+    
+    margin: auto;
+    min-width: 40vw;
+    line-height: 1px;
+    color: white;
+    font-size: 2vw;
+    max-height: 10vw;
+    max-width: 50vw;
+
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+  }
+
+  .link {
+    color: #F39F5A;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
