@@ -1,13 +1,12 @@
 body {
-    background: #451952;
+    background: #092635;
     font-family: Rubik Mono One;
 }
 .title_box{
-    
     margin: auto;
     min-width: 40vw;
     line-height: 1px;
-    color: white;
+    color: #1B4242;
     font-size: 2vw;
     max-height: 10vw;
     max-width: 50vw;
@@ -26,10 +25,200 @@ body {
   }
 
   .link {
-    color: #F39F5A;
-  }
+    color: #5C8374;
+    text-decoration: none;
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    top: 2%; 
+    left: 0;
+    right: 0;
+    height: 1vh; 
+    background-color: #9EC8B9;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
   a{
     text-decoration: none;
   }
 
+  .name{
+    display: flex;
+    justify-content: space-between;
+    color: #5C8374;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .link {
+    color: #5C8374;
+    text-decoration: none;
+    position: relative;
+}
+
+.name::after {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    right: 0;
+    height: 1vh; 
+    background-color: #9EC8B9;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.8s ease;
+    z-index: -1;
+}
+
+.name:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h1{
+    color: #1B4242;
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    font-size: 8vh;
+}
+
+h2{
+    font-size: 5vh;
+    color: #1B4242;
+    display: flex;
+    padding: 2vh;
+    justify-content: center;
+}
+
+.bodyText{
+    color: #9EC8B9;
+    font-family: rubik;
+    max-width: 80%;
+    margin: auto;
+    font-size: 2.5vh;
+}
+.verse{
+    font-style: italic;
+    color: #9EC8B9;
+    font-family: rubik;
+    max-width: 80%;
+    margin: auto;
+    font-size: 2vh;
+}
+
+.bodyLink{
+    max-width: 80%;
+    margin: auto;
+    font-size: 3vh;
+    color: #5C8374;
+    text-decoration: none;
+    position: relative;
+}
+
+.bodyLink::after {
+    content: "";
+    position: absolute;
+    bottom: 30%; 
+    left: 0;
+    right: 0;
+    height: 1vh; 
+    background-color: #9EC8B9;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.bodyLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.arrow {
+    border: solid #9EC8B9;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: .8vh;
+    transition: transform 0.4s ease;
+  }
+  
+
+  .left {
+    transform: rotate(135deg) translateX(-3px) translateY(-.15em);
+    -webkit-transform: rotate(135deg) translateX(-3px) translateY(-.15em);
+  }
+
+
+  .backButton{
+    max-width: 80%;
+    margin: auto;
+    font-size: 3vh;
+    color: #5C8374;
+    text-decoration: none;
+    position: relative;
+}
+
+.backButton:hover .left {
+    transform: rotate(135deg) translateX(-3px); 
+    -webkit-transform: translateX(-4px) rotate(135deg);
+}
+
+.contacts{
+    display: flexbox;
+}
+.contacts a{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.proj_titles{
+    margin-left: 3%;
+    max-width: 40%;
+    color: #9EC8B9;
+    font-size: 3vh;
+}
+.proj_body{
+    color: #9EC8B9;
+    font-family: rubik;
+    font-size: 2.5vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.column {
+    width:40%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.column-right{
+    margin: 10%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}

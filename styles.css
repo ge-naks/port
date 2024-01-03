@@ -1,0 +1,122 @@
+body {
+    background: #092635;
+    font-family: 'Rubik Mono One', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: #1B4242;
+    text-align: center;
+    padding: 2vh;
+    font-size: 8vh;
+    font-family: Rubik Mono One;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-column,
+.image-column {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 5vh;
+    color: #5C8374;
+    text-align: center;
+    padding: 2vh;
+}
+
+p {
+    color: #9EC8B9;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5vh;
+}
+
+.image-column{
+    padding-top: 10vh;
+}
+
+.bodyLink{
+    font-family: Rubik Mono One;
+    max-width: 80%;
+    margin: auto;
+    font-size: 3vh;
+    color: #5C8374;
+    text-decoration: none;
+    position: relative;
+}
+
+.bodyLink::after {
+    content: "";
+    position: absolute;
+    bottom: 30%; 
+    left: 0;
+    right: 0;
+    height: 1vh; 
+    background-color: #9EC8B9;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.bodyLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bodyText{
+    color: #9EC8B9;
+    font-family: rubik;
+    max-width: 50%;
+    margin: auto;
+    font-size: 3vh;
+}
+
+.arrow {
+    border: solid #9EC8B9;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: .8vh;
+    transition: transform 0.4s ease;
+  }
+  
+
+  .left {
+    transform: rotate(135deg) translateX(-3px) translateY(-.15em);
+    -webkit-transform: rotate(135deg) translateX(-3px) translateY(-.15em);
+  }
+
+
+  .backButton{
+    max-width: 80%;
+    margin: auto;
+    font-size: 3vh;
+    color: #5C8374;
+    text-decoration: none;
+    position: relative;
+}
+
+.backButton:hover .left {
+    transform: rotate(135deg) translateX(-3px); 
+    -webkit-transform: translateX(-4px) rotate(135deg);
+}
